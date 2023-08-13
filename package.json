@@ -1,0 +1,27 @@
+{
+  "name": "cyprus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test1": "cypress run --headless --browser edge",
+    "test2": "cypress run --headed --browser edge --env `notebook=waitForAnimations: false,cy.viewport(`macbook-11`)`",
+    "test3": "cypress run --headed --browser chrome --env `мобильник=waitForAnimations: false,cy.viewport(`iphone-6`)`",
+    "test4": "cypress run --headless --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivan89898/cyprus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivan89898/cyprus/issues"
+  },
+  "homepage": "https://github.com/ivan89898/cyprus#readme",
+  "devDependencies": {
+    "cypress": "^12.17.3",
+    "eslint": "^8.46.0",
+    "prettier": "^3.0.1"
+  }
+}
