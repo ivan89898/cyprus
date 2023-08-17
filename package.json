@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test1": "cypress run --headless --browser edge",
-    "test2": "cypress run --headed --browser edge --env `notebook=waitForAnimations: false,cy.viewport(`macbook-11`)`",
-    "test3": "cypress run --headed --browser chrome --env `мобильник=waitForAnimations: false,cy.viewport(`iphone-6`)`",
-    "test4": "cypress run --headless --browser chrome"
+    "test1": "cypress run --headless --browser edge --config-file mobile-test.config.js",
+    "test2": "cypress run --headed --browser edge --config-file mobile-test.config.js",
+    "test3": "cypress run --headed --browser chrome --config-file notebook-test.config.js",
+    "test4": "cypress run --headless --browser chrome --config-file notebook-test.config.js"
   },
   "repository": {
     "type": "git",
